@@ -10,7 +10,7 @@ import jakarta.transaction.Transactional;
 
 import ch.bbw.obelix.webshop.controller.ObelixWebshopController;
 import ch.bbw.obelix.webshop.dto.BasketDto;
-import ch.bbw.obelix.webshop.dto.DecorativenessDto;
+import ch.bbw.obelix.quarry.api.DecorativenessDto;
 import ch.bbw.obelix.webshop.entity.MenhirEntity;
 import ch.bbw.obelix.webshop.repository.MenhirRepository;
 import lombok.NonNull;

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import ch.bbw.obelix.webshop.dto.BasketDto;
-import ch.bbw.obelix.webshop.dto.MenhirDto;
+import ch.bbw.obelix.quarry.api.MenhirDto;
 import ch.bbw.obelix.webshop.entity.MenhirEntity;
 import ch.bbw.obelix.webshop.repository.MenhirRepository;
 import ch.bbw.obelix.webshop.service.ObelixWebshopService;

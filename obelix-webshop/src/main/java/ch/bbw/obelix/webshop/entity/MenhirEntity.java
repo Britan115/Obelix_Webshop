@@ -10,8 +10,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import ch.bbw.obelix.webshop.dto.DecorativenessDto;
-import ch.bbw.obelix.webshop.dto.MenhirDto;
+import ch.bbw.obelix.quarry.api.DecorativenessDto;
+import ch.bbw.obelix.quarry.api.MenhirDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
