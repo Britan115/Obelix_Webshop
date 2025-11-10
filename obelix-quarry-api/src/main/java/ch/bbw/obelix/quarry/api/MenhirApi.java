@@ -7,6 +7,9 @@ import org.springframework.web.service.annotation.GetExchange;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * API für Menhir-Operationen im Steinbruch von Obelix
+ */
 public interface MenhirApi {
     @GetExchange("/api/menhirs")
     List<MenhirDto> getAllMenhirs();
