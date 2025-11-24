@@ -8,9 +8,11 @@ dependencies {
 	implementation project(':obelix-quarry-api')
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-	testImplementation testFixtures(project(':obelix-common'))
-}
+	// observability
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'io.micrometer:micrometer-registry-prometheus'
+	implementation 'io.micrometer:micrometer-tracing-bridge-otel'
+	implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'
 
-tasks.named('bootRun') {
-	// mainClass = 'ch.bbw.m321.quarry.QuarryApplication'
+	testImplementation testFixtures(project(':obelix-common'))
 }

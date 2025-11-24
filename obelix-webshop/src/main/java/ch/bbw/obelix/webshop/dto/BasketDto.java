@@ -4,9 +4,6 @@ import java.util.List;
 
 import lombok.With;
 
-/**
- * A basket is an offer of various items in exchange for a standing stone.
- */
 @With
 public record BasketDto(List<BasketItem> items) {
 

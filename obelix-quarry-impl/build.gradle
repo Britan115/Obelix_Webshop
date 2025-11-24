@@ -6,4 +6,9 @@ plugins {
 dependencies {
 	implementation project(':obelix-common')
 	implementation project(':obelix-quarry-api')
+	// observability
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'io.micrometer:micrometer-registry-prometheus'
+	implementation 'io.micrometer:micrometer-tracing-bridge-otel'
+	implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'
 }

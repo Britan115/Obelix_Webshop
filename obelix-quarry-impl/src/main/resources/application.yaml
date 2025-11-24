@@ -3,5 +3,24 @@ spring:
     name: quarry
   profiles:
     active: common
+  zipkin:
+    base-url: http://localhost:9411
 server:
   port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,trace,traces
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+
+otel:
+  exporter:
+    zipkin:
+      endpoint: http://localhost:9411/api/v2/spans

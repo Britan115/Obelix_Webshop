@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'obelix'
+
+scrape_configs:
+  - job_name: 'obelix-quarry'
+    static_configs:
+      - targets: ['localhost:8081']
+    metrics_path: '/actuator/prometheus'
+
+  - job_name: 'obelix-webshop'
+    static_configs:
+      - targets: ['localhost:8080']
+    metrics_path: '/actuator/prometheus'

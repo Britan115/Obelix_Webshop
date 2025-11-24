@@ -1,6 +1,21 @@
 spring:
   datasource:
     url: jdbc:h2:mem:obelixdb
+  application:
+    tracing:
+      sampling:
+        probability: 1.0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
 logging:
   pattern:
     level: "%5p [%X{traceId:-},%X{spanId:-}]"
